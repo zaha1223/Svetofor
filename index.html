@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Zoov</title>
+    <title>Svetofor</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header></header>
-      <main></main>
+    <div class="container">
+      <div class="traffic-light">
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+      </div>
+      <ul class="btns-list">
+        <li class="btns-list__item">
+          <button id="red-btn" class="btns-list__btn">red</button>
+        </li>
+        <li class="btns-list__item">
+          <button id="yellow-btn" class="btns-list__btn">yellow</button>
+        </li>
+        <li class="btns-list__item">
+          <button id="green-btn" class="btns-list__btn">green</button>
+        </li>
+      </ul>
+      <button class="del-btn">All</button>
     </div>
-    <footer></footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

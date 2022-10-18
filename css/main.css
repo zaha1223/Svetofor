@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Advent Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/advent-pro-v18-latin-700.woff2") format("woff2") url("../fonts/advent-pro-v18-latin-700.woff") format("woff");
+}
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,6 +40,7 @@ a {
 }
 
 body {
+  font-family: "Advent Pro", sans-serif;
   margin: 0;
   height: 100vh;
   background: #fff;
@@ -51,8 +58,102 @@ body {
 
 .container {
   width: 100%;
+  max-width: 1540px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.traffic-light {
+  width: 220px;
+  height: auto;
+  background-color: rgb(71, 65, 65);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.light {
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgb(42, 55, 55);
+}
+
+.light:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.btns-list__item {
+  margin-left: 20px;
+}
+
+.btns-list__btn {
+  width: 130px;
+  height: auto;
+  padding: 12px 0;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 10px 5px grey;
+          box-shadow: 0 0 10px 5px grey;
+}
+
+.btns-list__btn:active {
+  -webkit-box-shadow: 0 0 10px 0 grey;
+          box-shadow: 0 0 10px 0 grey;
+}
+
+#red-btn {
+  background-color: red;
+  margin-top: 15px;
+}
+
+#yellow-btn {
+  background-color: yellow;
+}
+
+#green-btn {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.del-btn {
+  width: 130px;
+  height: auto;
+  padding: 12px 0;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 10px 5px grey;
+          box-shadow: 0 0 10px 5px grey;
+  background-color: darkcyan;
+}
+
+.del-btn:active {
+  -webkit-box-shadow: 0 0 10px 0 grey;
+          box-shadow: 0 0 10px 0 grey;
 }/*# sourceMappingURL=main.css.map */

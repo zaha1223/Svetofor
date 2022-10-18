@@ -1,0 +1,72 @@
+.traffic-light {
+  width: 220px;
+  height: auto;
+  background-color: rgb(71, 65, 65);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.light {
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgb(42, 55, 55);
+}
+.light:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.btns-list__item {
+  margin-left: 20px;
+}
+.btns-list__btn {
+  width: 130px;
+  height: auto;
+  padding: 12px 0;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 5px grey;
+}
+.btns-list__btn:active {
+  box-shadow: 0 0 10px 0 grey;
+}
+#red-btn {
+  background-color: red;
+  margin-top: 15px;
+}
+#yellow-btn {
+  background-color: yellow;
+}
+#green-btn {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.del-btn {
+  width: 130px;
+  height: auto;
+  padding: 12px 0;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 5px grey;
+  background-color: darkcyan;
+}
+.del-btn:active {
+  box-shadow: 0 0 10px 0 grey;
+}
