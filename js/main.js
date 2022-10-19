@@ -1,10 +1,10 @@
-const elRedBtn = document.querySelector("#red-btn");
 const elRedLight = document.getElementsByTagName("span")[0];
-const elYellowBtn = document.querySelector("#yellow-btn");
 const elYellowLight = document.getElementsByTagName("span")[1];
-const elGreenBtn = document.querySelector("#green-btn");
 const elGreenLight = document.getElementsByTagName("span")[2];
 
+const elRedBtn = document.querySelector("#red-btn");
+const elYellowBtn = document.querySelector("#yellow-btn");
+const elGreenBtn = document.querySelector("#green-btn");
 const elDelbtn = document.querySelector(".del-btn");
 
 elRedBtn.addEventListener("click", () => {
